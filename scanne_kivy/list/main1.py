@@ -49,6 +49,30 @@ MDScreen:
                 text: "Dog Cat"
                 bold: True
                 color: 1, 1, 1, 1
+        
+        
+        MDSmartTile:
+            radius: 24
+            box_radius: [0, 0, 24, 24]
+            lines: 2
+            source: "images/870x489_gettyimages-1269313679.jpg"
+            pos_hint: {"center_x": .5, "center_y": .5}
+            size_hint: None, None
+            size: "320dp", "320dp"
+
+            MDIconButton:
+                icon: "heart-outline"
+                theme_icon_color: "Custom"
+                icon_color: 1, 0, 0, 1
+                pos_hint: {"center_y": .5}
+                on_release: self.icon = "heart" if self.icon == "heart-outline" else "heart-outline"
+
+            TwoLineListItem:
+                text: "[color=#ffffff][b]My cats[/b][/color]"
+                secondary_text: "[color=#808080][b]Julia and Julie[/b][/color]"
+                pos_hint: {"center_y": .5}
+                _no_ripple_effect: True
+
         MDSmartTile:
             radius: 24
             box_radius: [0, 0, 24, 24]
@@ -71,6 +95,7 @@ MDScreen:
                 secondary_text: "[color=#808080][b]Julia and Julie[/b][/color]"
                 pos_hint: {"center_y": .5}
                 _no_ripple_effect: True
+               
 '''
 
 
