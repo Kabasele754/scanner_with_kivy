@@ -40,6 +40,7 @@ class MyLayout(BoxLayout):
         self.scr_mngr.current = screen
         
     def calc(self, instance):
+        print("je suis ici")
         print(self.ids['qrlabel'].text)
         
 class DemoApp(MDApp):
